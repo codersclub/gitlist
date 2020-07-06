@@ -26,5 +26,8 @@ if ($config->get('date', 'timezone')) {
 }
 
 $app = require 'boot.php';
+
+$app['rooturl'] = $config->get('app', 'rooturl');
+
 $app->run();
 
